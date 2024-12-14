@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tribute</title>
+    <script>
+        function changeContent(content) {
+            document.getElementById('right-content').innerHTML = content;
+            document.getElementById('title').innerHTML = "";
+        }
+    </script>
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <div class="left">
+                <nav>
+                    <ul>
+                        <li><a href="#" onclick="changeContent('<h2>Home</h2><p>Welcome to the tribute page.</p>')"><box-icon name='home' type='solid' size="md" color="white"></box-icon>Home</a></li>
+                        <li><a href="#" onclick="changeContent('<h2>Order of Service</h2><p>This is the order of service.</p>')"><box-icon name='universal-access' type='solid' size="md" color="white"></box-icon>Order of Service</a></li>
+                        <li><a href="#" onclick="changeContent('<h2>Service Livestream</h2><p>Watch the service live here.</p><img src=\'livestream.jpg\' alt=\'Livestream\' />')"><box-icon name='user-voice' type='solid' size="md" color="white"></box-icon>Service Livestream</a></li>
+                        <li><a href="#" onclick="changeContent('<h2>Gallery</h2><p>Check out our gallery below:</p><img src=\'gallery1.jpg\' alt=\'Gallery Image 1\' /><img src=\'gallery2.jpg\' alt=\'Gallery Image 2\' />')"><box-icon name='camera' type='solid' size="md" color="white"></box-icon>Gallery</a></li>
+                        <li><a href="#" onclick="changeContent('<h2>Charity Donations</h2><p>Support our cause by donating.</p>')"><box-icon name='donate-heart' type='solid' size="md" color="white"></box-icon>Charity Donations</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <h1 id="right-content">In Loving Memory</h1>
+                <p id="title">Of Our Beloved Youtuber Technoblade</p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="#" onclick="changeContent('<h2>Home</h2><p>Welcome to the tribute page.</p>')"><box-icon name='home' type='solid' size='md' color='white'></box-icon></a></li>
+            <li><a href="#" onclick="changeContent('<h2>Order of Service</h2><p>This is the order of service.</p>')"><box-icon name='universal-access' type='solid' size='md' color='white'></box-icon></a></li>
+            <li><a href="#" onclick="changeContent('<h2>Service Livestream</h2><p>Watch the service live here.</p><img src=\'livestream.jpg\' alt=\'Livestream\' />')"><box-icon name='user-voice' type='solid' size='md' color='white'></box-icon></a></li>
+            <li><a href="#" onclick="changeContent('<h2>Gallery</h2><p>Check out our gallery below:</p><img src=\'gallery1.jpg\' alt=\'Gallery Image 1\' /><img src=\'gallery2.jpg\' alt=\'Gallery Image 2\' />')"><box-icon name='camera' type='solid' size='md' color='white'></box-icon></a></li>
+            <li><a href="#" onclick="changeContent('<h2>Charity Donations</h2><p>Support our cause by donating.</p>')"><box-icon name='donate-heart' type='solid' size='md' color='white'></box-icon></a></li>
+        </ul>
+    </nav>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
