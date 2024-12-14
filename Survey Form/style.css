@@ -1,0 +1,122 @@
+:root {
+    --purple: #f3f3;
+    --aqua: #00bcd4;
+    --hover-color: #ff4081;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    color: var(--aqua);
+}
+
+header p {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.container {
+    background-color: #1e1e1e;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    display: block;
+}
+.form-group p {
+    margin-bottom: 15px;
+    display: block;
+}
+
+#name, #email, #number, .input-textarea, select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #00bcd4;
+    border-radius: 6px;
+    background-color: var(--purple);
+    color: var(--aqua);
+    transition: border-color 0.3s;
+    margin-top: 5px;
+}
+
+.input-textarea {
+    height: 100px;
+}
+
+#name:focus, #email:focus, #number:focus, .input-textarea:focus, select:focus {
+    border-color: var(--hover-color);
+    outline: none;
+}
+
+.input-checkbox, .input-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-checkbox input, .input-radio input {
+    margin-right: 10px;
+    accent-color: #00bcd4;
+}
+
+.input-checkbox label, .input-radio label {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+select:focus {
+    color: white;
+    background-color: var(--hover-color);
+}
+
+.input-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
