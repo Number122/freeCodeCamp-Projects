@@ -93,9 +93,6 @@ a {
     margin-bottom: 50px;
 }
 
-#image:hover {
-    scale: 1.2;
-}
 @media (max-width: 720px) {
     .container {
         flex-direction: column;
