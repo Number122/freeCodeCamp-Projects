@@ -1,0 +1,162 @@
+<!--! This documentation is not finished yet  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript fundamentals</title>
+</head>
+<body>
+    <nav id="navbar">
+      <header>JS Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#fundamentals">Javascript fundamentals</a></li>
+        <li><a class="nav-link" href="#variables">Variables</a></li>
+        <li><a class="nav-link" href="#math">Math</a></li>
+        <li><a class="nav-link" href="#text">Text</a></li>
+        <li><a class="nav-link" href="#array">Arrays</a></li>
+        <li><a class="nav-link" href="#conditions">Conditionals</a></li>
+        <li><a class="nav-link" href="#loop">Loops</a></li>
+        <li><a class="nav-link" href="#function">Functions</a></li>
+        <li><a class="nav-link" href="#object">Javascript object basics</a></li>
+        <li><a class="nav-link" href="#DOM">DOM scripting</a></li>
+        <li><a class="nav-link" href="#events">Events</a></li>
+        <li><a class="nav-link" href="#aysnc-basics">Async JavaScript basics</a></li>
+        <li><a class="nav-link" href="#fetch">Network requests with fetch()</a></li>
+        <li><a class="nav-link" href="#json">Working with json</a></li>
+        <li><a class="nav-link" href="#libraries">Libraries and frameworks</a></li>
+        <li><a class="nav-link" href="#debug">Debugging Javascript</a></li>
+      </ul>
+    </nav>
+
+    <main id="main">
+        <section class="main-section" id="fundamentals">
+            <header>Fundamentals</header>    
+            <article>
+                <p>JavaScript is a huge topic, with so many different features, styles, and techniques to learn, and so many APIs and tools built on top of it. This module focuses mostly on the essentials of the core language, plus some key surrounding topics — learning these topics will give you a solid basis to work from.</p>
+                <p>General resources:</p>
+                <ul>
+                    <li id="li-link"><a href="https://scrimba.com/learn/learnjavascript?via=mdn">Learn Javacsript on scrimba</a></li>
+                    <li id="li-link"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">What is Javascript</a></li>
+                    <li id="li-link"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash">A first splash into Javascript</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="variables">
+            <header>Variables</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Understand what variables are and why they are so important in programming generally, not just JavaScript.</li>
+                    <li>Declaring variables with <code>let</code> and initializing them with values</li>
+                    <li>Reassigning variables with new values.</li>
+                    <li>Creating constants with <code>const</code>.</li>
+                    <li>The difference between variables and constants, and when you would use each one.</li>
+                    <li>Understand variable naming best practices. If not explicitly covered, all examples should show good variable naming pratices in action.</li>
+                    <li>The different types of value that can be stored in variables — strings, numbers, booleans, arrays, and objects.</li>
+                </ul>
+                <p>Resources :</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Variables">Storing the information you need — Variables</a>
+            </article>
+        </section>
+        <section class="main-section" id="math">
+            <header>Math</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Basic number operations in JavaScript — add, subtract, multiply, and divide.</li>
+                    <li>Understand that numbers are not numbers if they are defined as strings, and how this can cause calculations to go wrong.</li>
+                    <li>Converting strings to numbers with <code>Number()</code>.</li>
+                    <li>Operator precedence.</li>
+                        <li>Basic Math object methods, such as Math.random(), Math.floor(), and Math.ceil().</li>
+                        <li>Incrementing and decrementing.</li>
+                        <li>Assignment operators, e.g. addition assignment and subtraction assignment.</li>
+                        <li>Comparison operators.</li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Math">Basic math in JavaScript - numbers and operators</a>
+                <a href="https://developer.mozilla.org/docs/Web/JavaScript/Guide/Numbers_and_dates">Numbers and dates</a>
+            </article>
+        </section>
+        <section class="main-section" id="text">
+            <header>Text</header>
+            <article>
+                <p>Learning outcomes</p>
+                <ul>
+                    <li>Creating string literals.</li>
+                    <li>Undeerstand the need for matching quotes</li>
+                    <li>String concatenation.</li>
+                    <li>Escaping characters in strings.</li>
+                    <li>Template literals:
+                        <ul>
+                            <li>Using variables in template literals.</li>
+                            <li>Multiline template literals.</li>
+                        </ul>
+                    </li>
+                    <li>String manipulation using common properties and methods such as:
+                        <ul>
+                            <li><code>length</code></li>
+                            <li><code>toSring()</code></li>
+                            <li><code>includes()</code></li>
+                            <li><code>indexOf()</code></li>
+                            <li><code>slice()</code></li>
+                            <li><code>toLowerCase</code> and <code>toUpperCase</code></li>
+                            <li><code>replace()</code></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Strings">Handling text - string in JavaScript</a>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Useful_string_methods">Useful string methods</a>
+            </article>
+        </section>
+        <section class="main-section" id="array">
+            <header>Arrays</header>
+            <p>Learning outcomes:</p>
+            <ul>
+                <li>Understand what an array is - a structure that holds a list of variables.</li>
+                <li>The syntax of arrays — <code>[a, b, c]</code> and the accessor syntax, <code>myArray[x]</code>.</li>
+            </ul>
+            
+        </section>
+        <section class="main-section" id="conditions">
+
+        </section>
+        <section class="main-section" id="loop">
+
+        </section>
+        <section class="main-section" id="function">
+
+        </section>
+        <section class="main-section" id="object">
+
+
+        </section>
+        <section class="main-section" id="DOM">
+
+        </section>
+        <section class="main-section" id="events">
+            
+        </section>
+        <section class="main-section" id="async-basics">
+
+        </section>
+        <section class="main-section" id="fetch">
+
+        </section>
+        <section class="main-section" id="json">
+
+        </section>
+        <section class="main-section" id="libraries">
+
+        </section>
+        <section class="main-section" id="debug">
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
