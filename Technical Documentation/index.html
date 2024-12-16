@@ -1,162 +1,305 @@
-<!--! This documentation is not finished yet  -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>JavaScript fundamentals</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript Fundamentals</title>
 </head>
 <body>
     <nav id="navbar">
       <header>JS Documentation</header>
       <ul>
-        <li><a class="nav-link" href="#fundamentals">Javascript fundamentals</a></li>
-        <li><a class="nav-link" href="#variables">Variables</a></li>
-        <li><a class="nav-link" href="#math">Math</a></li>
-        <li><a class="nav-link" href="#text">Text</a></li>
-        <li><a class="nav-link" href="#array">Arrays</a></li>
-        <li><a class="nav-link" href="#conditions">Conditionals</a></li>
-        <li><a class="nav-link" href="#loop">Loops</a></li>
-        <li><a class="nav-link" href="#function">Functions</a></li>
-        <li><a class="nav-link" href="#object">Javascript object basics</a></li>
-        <li><a class="nav-link" href="#DOM">DOM scripting</a></li>
-        <li><a class="nav-link" href="#events">Events</a></li>
-        <li><a class="nav-link" href="#aysnc-basics">Async JavaScript basics</a></li>
-        <li><a class="nav-link" href="#fetch">Network requests with fetch()</a></li>
-        <li><a class="nav-link" href="#json">Working with json</a></li>
-        <li><a class="nav-link" href="#libraries">Libraries and frameworks</a></li>
-        <li><a class="nav-link" href="#debug">Debugging Javascript</a></li>
+        <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#JavaScript_Object_Basics">JavaScript Object Basics</a></li>
+        <li><a class="nav-link" href="#DOM_Scripting">DOM Scripting</a></li>
+        <li><a class="nav-link" href="#Events">Events</a></li>
+        <li><a class="nav-link" href="#Async_JavaScript_Basics">Async JavaScript Basics</a></li>
+        <li><a class="nav-link" href="#Network_Requests_with_fetch">Network Requests with fetch</a></li>
+        <li><a class="nav-link" href="#Working_with_JSON">Working with JSON</a></li>
+        <li><a class="nav-link" href="#Libraries_and_Frameworks">Libraries and Frameworks</a></li>
+        <li><a class="nav-link" href="#Debugging_JavaScript">Debugging JavaScript</a></li>
       </ul>
     </nav>
 
-    <main id="main">
-        <section class="main-section" id="fundamentals">
-            <header>Fundamentals</header>    
-            <article>
-                <p>JavaScript is a huge topic, with so many different features, styles, and techniques to learn, and so many APIs and tools built on top of it. This module focuses mostly on the essentials of the core language, plus some key surrounding topics — learning these topics will give you a solid basis to work from.</p>
-                <p>General resources:</p>
-                <ul>
-                    <li id="li-link"><a href="https://scrimba.com/learn/learnjavascript?via=mdn">Learn Javacsript on scrimba</a></li>
-                    <li id="li-link"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">What is Javascript</a></li>
-                    <li id="li-link"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash">A first splash into Javascript</a></li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="variables">
-            <header>Variables</header>
+    <main id="main-doc">
+        <section class="main-section" id="Conditionals">
+            <header>Conditionals</header>
             <article>
                 <p>Learning outcomes:</p>
                 <ul>
-                    <li>Understand what variables are and why they are so important in programming generally, not just JavaScript.</li>
-                    <li>Declaring variables with <code>let</code> and initializing them with values</li>
-                    <li>Reassigning variables with new values.</li>
-                    <li>Creating constants with <code>const</code>.</li>
-                    <li>The difference between variables and constants, and when you would use each one.</li>
-                    <li>Understand variable naming best practices. If not explicitly covered, all examples should show good variable naming pratices in action.</li>
-                    <li>The different types of value that can be stored in variables — strings, numbers, booleans, arrays, and objects.</li>
+                    <li>Understand the concept of conditionals and their importance in programming.</li>
+                    <li>Using <code>if</code>, <code>else if</code>, and <code>else</code> statements to control the flow of code.</li>
+                    <li>Using the <code>switch</code> statement as an alternative to multiple <code>if</code> statements.</li>
+                    <li>Understanding truthy and falsy values in JavaScript.</li>
+                    <li>Using the ternary operator for concise conditional expressions.</li>
                 </ul>
-                <p>Resources :</p>
-                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Variables">Storing the information you need — Variables</a>
+                <p>Facts:</p>
+                <ul>
+                    <li>Conditionals allow for decision-making in code execution.
+                        <ul>
+                            <li>They help in controlling the flow of the program based on certain conditions.</li>
+                            <li>They are fundamental in implementing logic in applications.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/conditionals">Conditionals in JavaScript</a>
             </article>
         </section>
-        <section class="main-section" id="math">
-            <header>Math</header>
+    
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
             <article>
                 <p>Learning outcomes:</p>
                 <ul>
-                    <li>Basic number operations in JavaScript — add, subtract, multiply, and divide.</li>
-                    <li>Understand that numbers are not numbers if they are defined as strings, and how this can cause calculations to go wrong.</li>
-                    <li>Converting strings to numbers with <code>Number()</code>.</li>
-                    <li>Operator precedence.</li>
-                        <li>Basic Math object methods, such as Math.random(), Math.floor(), and Math.ceil().</li>
-                        <li>Incrementing and decrementing.</li>
-                        <li>Assignment operators, e.g. addition assignment and subtraction assignment.</li>
-                        <li>Comparison operators.</li>
+                    <li>Understanding the purpose of loops in programming.</li>
+                    <li>Using <code>for</code> loops to iterate over a range of values.</li>
+                    <li>Using <code>while</code> and <code>do...while</code> loops for repeated execution based on a condition.</li>
+                    <li>Understanding the <code>break</code> and <code>continue</code> statements to control loop execution.</li>
+                    <li>Using <code>for...of</code> and <code>for...in</code> loops to iterate over arrays and objects.</li>
                 </ul>
-                <p>Resources:</p>
-                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Math">Basic math in JavaScript - numbers and operators</a>
-                <a href="https://developer.mozilla.org/docs/Web/JavaScript/Guide/Numbers_and_dates">Numbers and dates</a>
-            </article>
-        </section>
-        <section class="main-section" id="text">
-            <header>Text</header>
-            <article>
-                <p>Learning outcomes</p>
+                <p>Facts:</p>
                 <ul>
-                    <li>Creating string literals.</li>
-                    <li>Undeerstand the need for matching quotes</li>
-                    <li>String concatenation.</li>
-                    <li>Escaping characters in strings.</li>
-                    <li>Template literals:
+                    <li>Loops are essential for automating repetitive tasks.
                         <ul>
-                            <li>Using variables in template literals.</li>
-                            <li>Multiline template literals.</li>
+                            <li>They can significantly reduce the amount of code needed.</li>
+                            <li>They improve performance by minimizing manual operations.</li>
                         </ul>
                     </li>
-                    <li>String manipulation using common properties and methods such as:
-                        <ul>
-                            <li><code>length</code></li>
-                            <li><code>toSring()</code></li>
-                            <li><code>includes()</code></li>
-                            <li><code>indexOf()</code></li>
-                            <li><code>slice()</code></li>
-                            <li><code>toLowerCase</code> and <code>toUpperCase</code></li>
-                            <li><code>replace()</code></li>
-                        </ul>
-                    </li>
-
                 </ul>
                 <p>Resources:</p>
-                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Strings">Handling text - string in JavaScript</a>
-                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Useful_string_methods">Useful string methods</a>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/looping">Loops in JavaScript</a>
             </article>
         </section>
-        <section class="main-section" id="array">
-            <header>Arrays</header>
-            <p>Learning outcomes:</p>
-            <ul>
-                <li>Understand what an array is - a structure that holds a list of variables.</li>
-                <li>The syntax of arrays — <code>[a, b, c]</code> and the accessor syntax, <code>myArray[x]</code>.</li>
-            </ul>
-            
+    
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>Learning outcomes:</p>
+ <ul>
+                    <li>Understanding what functions are and why they are used.</li>
+                    <li>Declaring and invoking functions in JavaScript.</li>
+                    <li>Understanding function parameters and return values.</li>
+                    <li>Using functions to organize and reuse code.</li>
+                    <li>Understanding function scope and the concept of closures.</li>
+                </ul>
+                <p>Facts:</p>
+                <ul>
+                    <li>Functions are reusable blocks of code.
+                        <ul>
+                            <li>They help in reducing code duplication.</li>
+                            <li>They improve code readability and maintainability.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions">Functions in JavaScript</a>
+            </article>
         </section>
-        <section class="main-section" id="conditions">
-
+    
+        <section class="main-section" id="JavaScript_Object_Basics">
+            <header>JavaScript Object Basics</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Understanding what objects are and how they are used in JavaScript.</li>
+                    <li>Declaring and accessing object properties.</li>
+                    <li>Understanding object methods and how to use them.</li>
+                    <li>Using object literals to create objects.</li>
+                    <li>Understanding object constructors and the `new` keyword.</li>
+                </ul>
+                <p>Facts:</p>
+                <ul>
+                    <li>Objects are collections of key-value pairs.
+                        <ul>
+                            <li>They are used to represent real-world objects and data structures.</li>
+                            <li>They are essential for building complex applications.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/Objects/Basics">JavaScript Object Basics</a>
+            </article>
         </section>
-        <section class="main-section" id="loop">
-
+    
+        <section class="main-section" id="DOM_Scripting">
+            <header>DOM Scripting</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Understanding the Document Object Model (DOM) and its importance in web development.</li>
+                    <li>Accessing and manipulating DOM elements using JavaScript.</li>
+                    <li>Understanding DOM events and how to handle them.</li>
+                    <li>Using DOM methods to create and modify elements.</li>
+                    <li>Understanding the concept of DOM traversal.</li>
+                </ul>
+                <p>Facts:</p>
+                <ul>
+                    <li>The DOM is a representation of the HTML document.
+                        <ul>
+                            <li>It allows JavaScript to interact with the document.</li>
+                            <li>It is essential for building dynamic web applications.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents">DOM Scripting</a>
+            </article>
         </section>
-        <section class="main-section" id="function">
-
+    
+        <section class="main-section" id="Events">
+            <header>Events</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Understanding what events are and how they are used in JavaScript.</li>
+                    <li>Understanding event listeners and how to attach them to elements.</li>
+                    <li>Understanding event propagation and how to stop it.</li>
+                    <li>Using events to respond to user interactions.</li>
+                    <li>Understanding the concept of event delegation.</li>
+                </ul>
+                <p>Facts:</p>
+                <ul>
+                    <li>Events are actions that occur in the browser.
+                        <ul>
+                            <li>They allow JavaScript to respond to user interactions.</li>
+                            <li>They are essential for building interactive web applications.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Events">Events in JavaScript</a>
+            </article>
         </section>
-        <section class="main-section" id="object">
-
-
+    
+        <section class="main-section" id="Async_JavaScript_Basics">
+            <header>Async JavaScript Basics</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Understanding what asynchronous programming is and its importance in JavaScript.</li>
+                    <li>Understanding callbacks and how to use them.</li>
+                    < li>Understanding promises and how to use them.</li>
+                    <li>Using async/await to write asynchronous code.</li>
+                    <li>Understanding the concept of asynchronous context.</li>
+                </ul>
+                <p>Facts:</p>
+                <ul>
+                    <li>Asynchronous programming allows for non-blocking code execution.
+                        <ul>
+                            <li>It improves the performance and responsiveness of web applications.</li>
+                            <li>It is essential for building modern web applications.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/Asynchronous/Async_await">Async JavaScript Basics</a>
+            </article>
         </section>
-        <section class="main-section" id="DOM">
-
+    
+        <section class="main-section" id="Network_Requests_with_fetch">
+            <header>Network Requests with fetch</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Understanding what the Fetch API is and its importance in modern web development.</li>
+                    <li>Using the Fetch API to make GET requests.</li>
+                    <li>Using the Fetch API to make POST requests.</li>
+                    <li>Understanding how to handle errors with the Fetch API.</li>
+                    <li>Using the Fetch API to make requests to APIs.</li>
+                </ul>
+                <p>Facts:</p>
+                <ul>
+                    <li>The Fetch API is a modern way of making network requests.
+                        <ul>
+                            <li>It provides a simple and intuitive API for making requests.</li>
+                            <li>It is supported by most modern browsers.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Web/API/Fetch_API">Network Requests with fetch</a>
+            </article>
         </section>
-        <section class="main-section" id="events">
-            
+    
+        <section class="main-section" id="Working_with_JSON">
+            <header>Working with JSON</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Understanding what JSON is and its importance in web development.</li>
+                    <li>Understanding how to parse JSON data.</li>
+                    <li>Understanding how to create JSON data.</li>
+                    <li>Using JSON to store and retrieve data.</li>
+                    <li>Understanding the concept of JSON schema.</li>
+                </ul>
+                <p>Facts:</p>
+                <ul>
+                    <li>JSON is a lightweight data interchange format.
+                        <ul>
+                            <li>It is easy to read and write.</li>
+                            <li>It is widely supported by most programming languages.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/JavaScript/Objects/JSON">Working with JSON</a>
+            </article>
         </section>
-        <section class="main-section" id="async-basics">
-
+    
+        <section class="main-section" id="Libraries_and_Frameworks">
+            <header>Libraries and Frameworks</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Understanding what libraries and frameworks are and their importance in web development.</li>
+                    <li>Understanding how to use popular libraries and frameworks such as React, Angular, and Vue.</li>
+                    <li>Understanding how to use libraries and frameworks to build complex web applications.</li>
+                    <li>Understanding the concept of library and framework architecture.</li>
+                    <li>Understanding how to choose the right library or framework for a project.</li>
+                </ul>
+                <p>Facts:</p>
+                <ul>
+                    <li>Libraries and frameworks provide pre-built functionality.
+                        <ul>
+                            <li>They save time and effort in building web applications.</li>
+                            <li>They provide a structure and organization for building complex applications.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks">Libraries and Frameworks</a>
+            </article>
         </section>
-        <section class="main-section" id="fetch">
-
-        </section>
-        <section class="main-section" id="json">
-
-        </section>
-        <section class="main-section" id="libraries">
-
-        </section>
-        <section class="main-section" id="debug">
-
+    
+        <section class="main-section" id="Debugging_JavaScript">
+            <header>Debugging JavaScript</header>
+            <article>
+                <p>Learning outcomes:</p>
+                <ul>
+                    <li>Understanding what debugging is and its importance in web development.</li>
+                    <li>Understanding how to use the browser's developer tools to debug JavaScript code.</li>
+                    <li>Understanding how to use console.log to debug JavaScript ```html
+                    code.</li>
+                    <li>Understanding how to use a debugger to step through JavaScript code.</li>
+                    <li>Understanding the concept of debugging techniques.</li>
+                </ul>
+                <p>Facts:</p>
+                <ul>
+                    <li>Debugging is the process of identifying and fixing errors.
+                        <ul>
+                            <li>It is an essential part of the web development process.</li>
+                            <li>It saves time and effort in building web applications.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Resources:</p>
+                <a href="https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Debugging_Techniques">Debugging JavaScript</a>
+            </article>
         </section>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>

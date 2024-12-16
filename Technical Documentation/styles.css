@@ -91,17 +91,22 @@ main ul li:hover {
     transform: scale(1.02);
 }
 
-main ul li ul li {
-    width: 500px;
-    color: darkslategray;
-    background-color: #c9c9c993;
-    border: none;
-    transition: 1s;
+.main-section ul ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
 }
 
-main ul li ul li:hover {
-    background-color: white;
-    width: 600px;
+.main-section ul ul li {
+    margin-bottom: 10px;
+}
+
+.main-section ul ul li::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 #li-link a {
