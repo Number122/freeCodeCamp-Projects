@@ -1,0 +1,113 @@
+body {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    margin-top: 50px;
+    width: 300px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+form {
+    zoom: 1.25;
+    background-color: rgba(235, 235, 235, 0.308);
+    border: 3px solid white;
+    border-radius: 22px;
+    padding: 20px;
+    width: 236px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+form fieldset * {
+    margin-bottom: 10px;
+}
+
+form fieldset label {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+form fieldset input {
+    background-color: #1e1e1e;
+    border: 2px solid white;
+    height: 30px;
+    width: 200px;
+    font-size: larger;
+    color: white;
+}
+
+form button {
+    background: yellow;
+    box-shadow: 0px -2px 8px white;
+    border-radius: 7px;
+    height: 30px;
+    transition: .3s; 
+}
+
+form button:hover {
+    background-color: brown;
+    scale: 1.02;
+}
+
+.output {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    background-color: #f0f0f0a2;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 330px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 500px){
+    .logo, h1 {
+        zoom: 0.7;
+    }
+    form {
+        zoom: 1;
+    }
+}
