@@ -1,0 +1,1 @@
+Since i haven't finished my javascript courses yet, i'm not sure if this is the best way to do the codes, so i haven't checked the codes for fcc it probably doest pass the requirements
