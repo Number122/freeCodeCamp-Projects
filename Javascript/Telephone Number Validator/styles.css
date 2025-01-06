@@ -29,6 +29,10 @@ main * {
 main h1 {
     color: #383838;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background: #8e8e8e;
+    padding: 1%;
+    border-radius: 17px;
+    box-shadow: 2px 8px 8px #1e1e1e;
 }
 
 .phone-container {
@@ -44,6 +48,15 @@ main h1 {
     align-items: center;
     color: white;
     font-size: 1.4rem;
+}
+
+.results-scrollable {
+    width: 90%;
+    height: 300px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .phone-container::before {
@@ -124,4 +137,14 @@ input[type="text"]:focus {
 
 .btn-styles:active {
     transform: translateY(0);
+}
+
+.valid {
+    color: green;
+    font-size: 1rem;
+}
+
+.invalid {
+    font-size: 1rem;
+    color: red;
 }
